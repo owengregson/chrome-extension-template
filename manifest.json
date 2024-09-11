@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "chrome-extension-template",
+    "description": "A Manifest V3 Chrome Extension template following my (superior) project file structure organization.",
+    "version": "1.0.0",
+    "icons": {
+        "16": "./assets/images/icon_16x.png",
+        "48": "./assets/images/icon_48x.png",
+        "128": "./assets/images/icon_128x.png"
+    },
+    "options_page": "./pages/settings.html",
+    "action": {
+        "default_title": "Main Menu",
+        "default_popup": "./pages/update.html"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "background": {
+        "service_worker": "./js/service-worker.js"
+    }
+}
